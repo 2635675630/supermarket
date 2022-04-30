@@ -29,14 +29,15 @@ export default {
     flex:1;
     display: flex;
     flex-direction: column;
-    align-items: stretch;
+    /* align-items: stretch; */
     text-align: center;
     
     
 }
 .tagbaritems_img{
-    flex: 2;
-    flex-grow: 0;
+    flex: 3.5;
+    flex-grow: 3.5;
+    overflow: hidden;
 }
 .tagbaritems_img img{
     width: 100%;
@@ -45,11 +46,16 @@ export default {
 
 }
 .tagbaritems_text{
-    flex: 1;
+    
     text-align: center;
-    font-size: 1vh;
+    overflow: hidden;
+    font-size: 3vh;
+   padding-bottom: 2vh;
+    
 }
+
+
 .active{
-    background-color: gray;
+    background-color: rgba(112, 108, 108,0.4);
 }
 </style>

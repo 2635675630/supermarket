@@ -17,7 +17,7 @@ export default {
     display: flex;
     position: fixed;
     left: 0;
-    bottom: 15vh;
-    flex-grow: 0;
+    bottom: 0;
+    justify-content: space-around;
 }
 </style>

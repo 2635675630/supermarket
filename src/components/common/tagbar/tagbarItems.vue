@@ -1,3 +1,4 @@
+// 底栏子组件
 <template>
 <div class="tagbaritems" @click="location" :class="{'active':isactive}">
     <div class="tagbaritems_img"><slot name="items_img"></slot></div>
@@ -26,6 +27,7 @@ export default {
 
 <style>
 .tagbaritems{
+    cursor: pointer;
     flex:1;
     display: flex;
     flex-direction: column;
@@ -47,10 +49,12 @@ export default {
 }
 .tagbaritems_text{
     
+    flex: 1;
+    flex-grow: 2.5;
     text-align: center;
     overflow: hidden;
-    font-size: 3vh;
-   padding-bottom: 2vh;
+    font-size: 100%;
+   
     
 }
 

@@ -1,3 +1,4 @@
+// 底栏组件
 <template>
   <div class="tagbar">
       <slot></slot>
@@ -13,7 +14,7 @@ export default {
 <style>
 .tagbar{
     width: 100vw;
-    height: 15vh;
+    height: 8vh;
     display: flex;
     position: fixed;
     left: 0;

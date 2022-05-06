@@ -25,7 +25,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tagbaritems{
     cursor: pointer;
     flex:1;

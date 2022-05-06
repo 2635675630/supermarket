@@ -11,7 +11,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .tagbar{
     width: 100vw;
     height: 8vh;
@@ -20,5 +20,7 @@ export default {
     left: 0;
     bottom: 0;
     justify-content: space-around;
+    background-color: white;
 }
+
 </style>

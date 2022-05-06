@@ -13,7 +13,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .NavBar{
         display: flex;
         width: 100vw;

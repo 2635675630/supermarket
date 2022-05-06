@@ -5,7 +5,7 @@
   </div>
 </template>
 <script>
-import MainTagBar from 'components/content/MainTagBar.vue'
+import MainTagBar from 'components/content/MainTagBar/MainTagBar.vue'
 
 export default {
   components:{

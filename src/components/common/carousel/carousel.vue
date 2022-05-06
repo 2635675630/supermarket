@@ -1,7 +1,9 @@
 <template>
-  <el-carousel indicator-position="outside" height="25vh">
+  <el-carousel indicator-position="outside" height="25vh" style="margin-top:8vh">
     <el-carousel-item v-for="(item,index) in list" :key="index" class="carousel">
+      <a :href="item.link">
       <img :src="item.image" alt="" class="img">
+      </a>
     </el-carousel-item>
   </el-carousel>
 </template>
@@ -27,9 +29,7 @@ export default{
     max-width: 810px;
     text-align: center;
 }
-el-carousel button{
 
-}
 .el-carousel__item h3 {
   color: #475669;
   font-size: 18px;

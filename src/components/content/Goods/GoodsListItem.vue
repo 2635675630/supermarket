@@ -1,7 +1,7 @@
 <template>
   <div class="goodsitem">
       <a :href="goodsitem.link">
-          <img :src="goodsitem.show.img" alt="">
+          <img :src="goodsitem.show.img" alt="" @load="imgload">
       <p>{{goodsitem.title}}</p>
       <span class="price">${{goodsitem.price}}</span>
       <span class="cfav">⭐{{goodsitem.cfav}}</span>
@@ -14,6 +14,11 @@ export default {
     props:{
         goodsitem:{
             type:Object
+        }
+    },
+    methods:{
+        imgload(){
+            this.$bus.$emit('itemimgload')
         }
     }
 }
@@ -35,12 +40,13 @@ span{
     height: 10%;
     text-align: center;
 }
-p{
-    display: inline-block;
+.goodsitem p{
     overflow:hidden;
-    width: 100%;
-    height: 11%;
-    text-overflow: ellipsis;
+    text-overflow:ellipsis;
+    -webkit-line-clamp: 2;
+    display:-webkit-inline-box;
+    -webkit-box-orient: vertical;
 }
+
 
 </style>

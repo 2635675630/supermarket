@@ -17,6 +17,9 @@ export default {
                 return[]
             }
         }
+    },
+    mounted(){
+        this.$emit('goodsonload')
     }
 }
 </script>

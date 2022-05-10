@@ -1,5 +1,5 @@
 <template>
-  <el-carousel indicator-position="outside" height="25vh" style="margin-top:8vh">
+  <el-carousel indicator-position="outside" height="25vh" style="">
     <el-carousel-item v-for="(item,index) in list" :key="index" class="carousel">
       <a :href="item.link">
       <img :src="item.image" alt="" class="img">
